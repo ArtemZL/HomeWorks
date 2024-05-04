@@ -1,0 +1,3 @@
+USA NewYork 8400000
+USA LosAngeles 3976000
+Spain Madrid 2716000
