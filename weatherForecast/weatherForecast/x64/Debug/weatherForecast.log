@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\project 1\weatherForecast\weatherForecast\func.h(51,17): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  weatherForecast.vcxproj -> D:\project 1\weatherForecast\x64\Debug\weatherForecast.exe

@@ -1,0 +1,14 @@
+Monday 4 May 3 None 0.5
+Tuesday 7 September 26 Rain 0.8
+Wednesday 8 May 28 Snow 1.2
+Thursday 4 April 23 None 0
+Friday 20 June 22 None 0
+Monday 4 May 26 None 0.3
+Sunday 7 May 25 Rain 0.7
+Monday 23 April 27 None 0.4
+Tuesday 11 May 28 None 0.9
+Monday 10 May 27 None 0.2 
+Thursday 45 May 26 Rain 0
+Friday 12 July 25 None 0
+Monday 3 May 23 None 0.1
+Sunday 14 June 24 Rain 0.6
