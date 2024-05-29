@@ -1,0 +1,13 @@
+﻿  main.cpp
+D:\project 1\Exam\Exam\ScoolarShip.h(122,14): warning C4244: 'initializing': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+D:\project 1\Exam\Exam\ScoolarShip.h(119,12): message : while compiling class template member function 'T PremiumShip<T>::getScolarShip(void) const'
+          with
+          [
+              T=int
+          ]
+D:\project 1\Exam\Exam\main.cpp(11,19): message : see reference to class template instantiation 'PremiumShip<int>' being compiled
+  Exam.vcxproj -> D:\project 1\Exam\x64\Debug\Exam.exe
