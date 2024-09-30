@@ -85,6 +85,14 @@ class Manager:
         if not found:
             print("There is no product")
 
+    def purchase_product(self, id, number):
+        for product in self.products:
+            if product.id == id:
+                product.amount += number
+                print("Product " + product.id + " purchased successfully")
+                return
+        print("Product not purchased")
+
 def menu():
     print("""
     Menu:
@@ -140,6 +148,11 @@ def main():
             price = float(input("Enter price: "))
             amount = int(input("Enter amount: "))
             manager.add_product(name, price, amount, id, category)
+
+         elif choice == "h":
+            id = int(input("Enter id: "))
+            number = int(input("Enter number: "))
+            manager.purchase_product(id, number)
 
         elif choice == "i":
             id = int(input("Enter id: "))
