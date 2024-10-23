@@ -1,12 +1,9 @@
 import csv
-
-# Тарифи
 TARIFFS = {
     'cold_water_price': 15.0,
     'hot_water_price': 30.0,
     'heating_price': 5.0,
 }
-
 
 class Flat:
     def __init__(self, flat_id, flat_number, house_number):
@@ -14,13 +11,11 @@ class Flat:
         self.flat_number = flat_number
         self.house_number = house_number
 
-
 class ColdWaterUsage:
     def __init__(self, flat_id, month, cold_water_volume):
         self.flat_id = flat_id
         self.month = month
         self.cold_water_volume = float(cold_water_volume)
-
 
 class HotWaterUsage:
     def __init__(self, flat_id, month, hot_water_volume, heating_gcal):
@@ -28,7 +23,6 @@ class HotWaterUsage:
         self.month = month
         self.hot_water_volume = float(hot_water_volume)
         self.heating_gcal = float(heating_gcal)
-
 
 class PaymentCalc:
     def __init__(self, flats, cold_water_usages, hot_water_usages):
@@ -140,7 +134,7 @@ def main():
 
     payment_system = PaymentCalc(flats, cold_water_usages, hot_water_usages)
     total_costs = payment_system.calculate_total_costs()
-    monthly_costs = payment_system.calculate_monthly_house_payment()
+
 
     print("Total water cost by houses:")
     for house_number, costs in total_costs.items():

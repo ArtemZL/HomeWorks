@@ -57,17 +57,13 @@ def calculate_total_cost(cars, operations, service_records):
     for record in service_records:
         car = cars[record.car_number]
         operation = operations[record.operation_number]
-
         operation_cost = operation.cost + (record.part_amount * operation.part_cost)
         total_cost += operation_cost
-
         if operation.operation_number not in operation_payments:
             operation_payments[operation.operation_number] = 0
         operation_payments[operation.operation_number] += operation_cost
-
         if operation.operation_number not in operation_car_count:
             operation_car_count[operation.operation_number] = {}
-
         if car.brand not in operation_car_count[operation.operation_number]:
             operation_car_count[operation.operation_number][car.brand] = 0
         operation_car_count[operation.operation_number][car.brand] += 1
@@ -76,14 +72,12 @@ def calculate_total_cost(cars, operations, service_records):
 
 
 def main():
-
     car_file = "cars.csv"
     operations_file = "operations.csv"
     service_file = "service_records.csv"
     cars = read_cars(car_file)
     operations = read_operations(operations_file)
     service_records = read_service_records(service_file)
-
     total_payment, operation_payments, operation_car_count = calculate_total_cost(cars, operations, service_records)
 
     print(f"Total payment for all operations: {total_payment}")
@@ -100,8 +94,6 @@ def main():
             print("Brand: " + brand + ": " + str(count))
     else:
         print("No records found for operation " + input_operations)
-
-
 
 if __name__ == "__main__":
     main()
