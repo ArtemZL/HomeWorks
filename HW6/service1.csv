@@ -1,0 +1,5 @@
+station_id,date,fuel_type,volume
+1,2023-01-01,PULLS_Diesel,100.0
+1,2023-01-01,PULLS_95,50.0
+2,2023-01-03,Diesel,120.0
+3,2023-01-05,PULLS_Diesel,80.0
