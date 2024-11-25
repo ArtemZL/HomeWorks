@@ -1,0 +1,5 @@
+operation_id,order_id,component_id,date,status,id,name,material,price,total_cost
+3,2,3,2024-07-11,done,3,plywood,peeled veneer,100,100
+1,1,2,2024-05-10,done,2,oak board,tree,75,75
+4,3,5,2024-07-22,done,5,board,wood,35,35
+5,4,5,2024-08-12,done,5,board,wood,35,35

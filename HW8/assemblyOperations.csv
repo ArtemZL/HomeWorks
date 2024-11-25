@@ -1,0 +1,7 @@
+operation_id,order_id,component_id,date,status
+1,1,2,2024-05-10,done
+2,1,2,2024-06-28,processing
+3,2,3,2024-07-11,done
+4,3,5,2024-07-22,done
+5,4,5,2024-08-12,done
+6,5,4,2024-09-10,processing
